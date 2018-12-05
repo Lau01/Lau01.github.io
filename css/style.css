@@ -11,13 +11,21 @@ svg {
 body {
   margin: 0;
   line-height: 1.15;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
+  font-family: 'Arial', sans-serif;
+}
+
+body > * {
+  padding: 8em 56em 8em 14em;
+  min-width: 40em;
 }
 
 .svg-container {
   position: absolute;
   left: 1em;
 }
+
+/* ================================MISC */
 
 .orange {
   color: rgb(245, 190, 98);
@@ -30,11 +38,12 @@ body {
 }
 
 
-.header {
-  padding: 8em 32em 8em 8em;
+.grey-bg {
+  /* padding: 8em 32em 8em 8em; */
   background-color: #f4f4f4;
 }
 
+/* ================================HEADER */
 
 .header-title {
   font-size: 9em;
@@ -50,11 +59,14 @@ body {
   line-height: 1.375em;
 }
 
+/* ================================PROJECTS */
+
 .projects-container {
-  padding: 8em 32em 8em 8em;
+  /* padding: 8em 32em 8em 8em; */
 }
 
 .projects-title {
+  font-family: 'Heebo', sans-serif;
   font-size: 4em;
 }
 
@@ -66,6 +78,7 @@ body {
 .projects-list > li {
   margin-top: 2em;
 }
+
 
 .project-name {
   font-size: 2.25em;
@@ -87,6 +100,15 @@ body {
   margin-right: 5px;
   border-radius: 2px;
 }
+
+.projects-image {
+  margin: 1em 0 1em 0;
+  width: 90%;
+  border: 1px solid rgba(245, 190, 98, 0.5);
+}
+
+/* ================================CONTACT */
+
 
 .contact-title {
   font-size: 4em;
