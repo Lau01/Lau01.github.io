@@ -6,37 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Domine|Raleway|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"></link>
   <title>Andy Lau</title>
 </head>
 <body>
-  <!-- <div>
+  <div class="svg-container">
     <svg
-      class="svg-container"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
 
-    <path d="M51,4 L50,200 M50,5 L200,5"
+    <path d="M9,2 L9,200 M8,2 L130,2"
       stroke="rgb(245, 190, 98)" stroke-width="3.5" fill="none"
     />
     </svg>
-  </div> -->
+  </div>
 
   <div class="header grey-bg">
      <div class="header-title">
-       HELLO<span class="orange">.</span>
+       <span class="header-hello">HELLO</span><span class="orange fullstop">.</span>
      </div>
      <div class="header-intro">
        I am <span class="orange-underline">Andy Lau</span>, a Web Developer, food enthusiast and an avid learner.
      </div>
      <div class="header-description">
       <p>
-        After graduating from a Civil Engineering / Commerce dual degree and working in project management, I decided to try my hand at coding. Having always been passionate about <span class="underline-small">building</span> and <span class="underline-small">creating</span> new things, I took a web development course at General Assembly. I've been hooked onto coding and its joys and woes ever since.
+        After graduating from a Civil Engineering / Commerce dual degree and working in project management, I decided to try my hand at coding. Having always been passionate about building and creating new things, I took a web development course at General Assembly. I've been hooked onto coding and its joys and woes ever since.
       </p>
       <p>
-        I am currently most interested in working with and learning more about <span class="underline-small">React.js</span> and <span class="underline-small">Node.js.</span> In my spare time, I enjoy games, trying different foods and admiring anything well designed.
+        I am currently most interested in working with and learning more about React.js and Node.js. In my spare time, I enjoy games, trying different foods and admiring anything well designed.
       </p>
       <p>
         See below for my projects!
@@ -46,41 +45,13 @@
 
 
   <div class="projects-container">
-    <div class="projects-title">
-      PROJECTS
-    </div>
+    <!-- <div class="projects-title">
+      WORKS
+    </div> -->
 
     <ul class="projects-list">
       <li>
-        <!-- <span class="project-name">Sydney Trip Planner</span>
-        <div class="container">
-          <div class="row">
-            <div class="col-md project-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, tenetur placeat alias officiis ab praesentium quisquam libero dolore rerum qui quibusdam ratione veniam, beatae in. Tenetur pariatur in a corrupti!
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, tenetur placeat alias officiis ab praesentium quisquam libero dolore rerum qui quibusdam ratione veniam, beatae in. Tenetur pariatur in a corrupti!
-              </div>
-
-              <div class="col-sm order-sm-1 order-12">
-                <ul class="technologies-list">
-                  <li><span>JavaScript</span></li>
-                  <li><span>React.js</span></li>
-                  <li><span>Node.js</span></li>
-                  <li><span>Express</span></li>
-                  <li><span>MongoDB</span></li>
-                  <li><span>Mongoose</span></li>
-                  <li><span>API</span></li>
-                </ul>
-              </div>
-
-
-            <div class="col-sm order-sm-12 order-1">
-              <img class="projects-image" src="./assets/trip_planner.png"/>
-            </div>
-          </div>
-        </div> -->
-
-
-        <span class="project-name">Sydney Trip Planner</span>
+        <span class="project-name">Trip Planner</span>
         <ul class="technologies-list">
           <li><span>JavaScript</span></li>
           <li><span>React.js</span></li>
@@ -93,7 +64,7 @@
         <img class="projects-image" src="./assets/trip_planner.png"/>
         <div class="project-description">
           <p>
-            My first utility app I've ever used was TripView. To this day I still find it very useful despite having so many alternatives.
+            My first utility app I've ever used was TripView on the Apple iPod Touch. To this day I still find it very useful despite having so many alternatives.
             For my final project at General Assembly, I decided to take inspiration from it and make a trip planner that allows users to save their favourite trips.
           </p>
           <p>
@@ -101,9 +72,16 @@
           </p>
         </div>
         <p class="project-links">
-          <a href="https://how-to-trip.herokuapp.com/#/search">Live Demo</a> |
-          <a href="https://github.com/Lau01/Project3-Frontend">Front-end GitHub</a> |
-          <a href="https://github.com/Lau01/Project3-backend">Back-end GitHub</a>
+          <a href="https://how-to-trip.herokuapp.com/#/search">Live Demo <img class="link-icons open-icon" src="assets/open.svg"/>
+          </a>
+          |
+          <a href="https://github.com/Lau01/Project3-Frontend">
+            Front End GitHub <img class="link-icons git-icon" src="assets/github-grey.svg"/>
+          </a>
+          |
+          <a href="https://github.com/Lau01/Project3-backend">
+            Back End GitHub <img class="link-icons git-icon" src="assets/github-grey.svg"/>
+          </a>
         </p>
       </li>
 
@@ -117,18 +95,24 @@
           <li><span>Ruby on Rails</span></li>
           <li><span>Leap Motion</span></li>
         </ul>
-        <img class="projects-image" src="./assets/draw.png"/>
+        <img class="projects-image" src="./assets/doodle.png"/>
         <div class="project-description">
           <p>
             "How Do You Doodle?" was created as a pair group project. We used web sockets to allow two players to play a game of Pictionary ... but with a twist! Players can use the Leap Motion to draw with your hands or the mouse cursor.
           </p>
 
           <p>
-            My focus for this project was the drawing aspects of the web app using the <code>canvas</code> element and the Leap Motion drawing logic which was connected to the web sockets to send to the guesser's side.
+            My focus for this project was the drawing aspects of the web app using the <code>&lt;canvas&gt;</code> element and the Leap Motion drawing logic which was connected to the web sockets to send to the guesser's side.
           </p>
         </div>
         <p class="project-links">
-          <a href="https://whichdoodle.herokuapp.com/">Live Demo</a> | <a href="https://github.com/Lau01/project2">GitHub</a>
+          <a href="https://whichdoodle.herokuapp.com/">
+            Live Demo <img class="link-icons open-icon" src="assets/open.svg"/>
+          </a>
+          |
+          <a href="https://github.com/Lau01/project2">
+            GitHub <img class="link-icons git-icon" src="assets/github-grey.svg"/>
+          </a>
         </p>
       </li>
 
@@ -146,7 +130,13 @@
           </p>
         </div>
         <div class="project-links">
-          <a href="https://hatted3.herokuapp.com/restaurants">Live Demo</a> | <a href="https://github.com/Lau01/project1">GitHub</a>
+          <a href="https://hatted3.herokuapp.com/restaurants">
+            Live Demo <img class="link-icons open-icon" src="assets/open.svg"/>
+          </a>
+          |
+          <a href="https://github.com/Lau01/project1">
+            GitHub <img class="link-icons git-icon" src="assets/github-grey.svg"/>
+          </a>
         </div>
       </li>
 
@@ -164,24 +154,28 @@
           </p>
         </div>
         <p class="project-links">
-          <a href="https://lau01.github.io/tic-tac-toe/index.html">Live Demo</a> | <a href="https://github.com/Lau01/tic-tac-toe">GitHub</a>
+          <a href="https://lau01.github.io/tic-tac-toe/index.html">
+            Live Demo <img class="link-icons open-icon" src="assets/open.svg"/>
+          </a>
+          |
+          <a href="https://github.com/Lau01/tic-tac-toe">
+            GitHub <img class="link-icons git-icon" src="assets/github-grey.svg"/>
+          </a>
         </p>
       </li>
     </ul>
   </div>
 
-  <div class="grey-bg">
+  <div class="contact-container grey-bg">
      <div class="contact-title">
        CONTACT
      </div>
-     <p>
-      Would you like to get in touch?
+     <p class="email">
+      lau.andy.lau@gmail.com
      </p>
-     <ul>
-       <li>LinkedIn</li>
-       <li>GitHub</li>
-       <li>Email</li>
-       <li>Phone</li>
+     <ul class="media-list">
+       <li><a href="https://www.linkedin.com/in/lau-andy/"><img src="assets/linkedin-logo.svg" /></a></li>
+       <li><a href="https://github.com/Lau01"><img src="assets/github-orange.svg" /></a></li>
      </ul>
   </div>
 </body>
